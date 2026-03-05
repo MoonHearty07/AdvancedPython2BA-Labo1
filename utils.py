@@ -3,8 +3,8 @@ from scipy.integrate import quad
 
 def fact(n):
 	if n < 0:
-		raise ValueError("Un chiffre positif !!!")
-	for i in range(1, n+1):
+		raise ValueError('Must be positive !')
+	for i in range(1, n):
 		n *= i
 	return n
 
@@ -20,7 +20,7 @@ def roots(a, b, c):
 def integrate(function, lower, upper):
 	def fun(x):
 		return eval(function,{"x":x})
-	return quad(fun, lower, upper)
+	return quad(fun, lower, upper)[0]
 
 if __name__ == '__main__':
 	print(fact(5))

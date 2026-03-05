@@ -9,5 +9,5 @@ def test_roots():
     assert utils.roots(1,0,-1) == (-1,1)
 
 def test_integrate():
-    assert isclose(utils.integrate("2*x", 0, 2), 4.0)
+    assert utils.integrate("2*x", 0, 2) == 4.0
     
