@@ -7,7 +7,7 @@ def create_galaxies():
         Galaxy(Name="Cartwheel", MegaLightYears=25.2, GalaxyType=GType('L')),
         Galaxy(Name="Tadpole", MegaLightYears=40.25, GalaxyType=GType('S')),
         Galaxy(Name="Pinwheel", MegaLightYears=15.358, GalaxyType=GType('S')),
-        Galaxy(Name="Small Magellanic Cloud", MegaLightYears=0.2, GalaxyType=GType('l')),
+        Galaxy(Name="Small Magellanic Cloud", MegaLightYears=0.2, GalaxyType=GType('L')),
         Galaxy(Name="Andromeda", MegaLightYears=3, GalaxyType=GType('S')),
         Galaxy(Name="Maffei 1", MegaLightYears=11, GalaxyType=GType('E')),
     ]
