@@ -1,6 +1,6 @@
-import pytest
 import utils
 from scipy.integrate import quad
+from math import isclose
 
 def test_fact():
     assert utils.fact(3) == 6
@@ -9,9 +9,5 @@ def test_roots():
     assert utils.roots(1,0,-1) == (-1,1)
 
 def test_integrate():
-    
-    def integrand(x, a, b):
-        return a*x**b
-    
-    assert utils.integrate(integrand, -5, 7) == quad(integrand, -5, 7, args=(1,2))
+    assert isclose(utils.integrate("2*x", 0, 2), 4.0)
     
